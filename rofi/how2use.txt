@@ -1,0 +1,3 @@
+mv config.rasi ~/.config/rofi/config.rasi
+
+Alt+Space

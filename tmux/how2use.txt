@@ -1,0 +1,3 @@
+mv tmux.conf ~/.config/tmux/tmux.conf
+
+Ctrl+Space
