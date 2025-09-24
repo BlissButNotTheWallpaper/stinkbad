@@ -13,8 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu Mono Regular 20
-
+font pango: monospace 20  
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 15
@@ -185,7 +184,7 @@ bindsym $mod+Shift+space exec --no-startup-id xfce4-popup-whiskermenu
 ################ assign to workplace #################
 
 assign [class="firefox"] $ws1
-assign [class="Xfce4-terminal"] $ws2
+assign [class="kitty"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="Cherrytree"] $ws4
 assign [class ="install4j-burp-StartBurp"] $ws5
@@ -201,7 +200,7 @@ assign [class="thunderbird-esr"] $ws10
 bindsym $mod+b exec --no-startup-id firefox 
 bindsym $mod+o exec --no-startup-id obsidian
 bindsym $mod+c exec --no-startup-id cherrytree
-bindsym $mod+t exec --no-startup-id xfce4-terminal
+bindsym $mod+t exec --no-startup-id kitty 
 
 ################ border stuffs #####################
 
@@ -214,7 +213,7 @@ bindsym $mod+p exec flameshot gui
 
 ############### i3 bar ##############
 bar {
-    status_command i3status --config ~/.i3status.conf
+    status_command i3status --config ~/.config/i3status/i3status.conf 
     colors {
         background #000000
         statusline #ffffff
